@@ -1,0 +1,98 @@
+/* Styles for portfolio.html */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1a2e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul .logo {
+    margin-right: auto;
+    padding-left: 100px;
+}
+
+.navbar ul .ganda {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff4b5c;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff4b5c;
+}
+
+.portfolio {
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.portfolio .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #f1c40f;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    position: relative;
+    width: calc(33.333% - 20px);
+    background: #2a2a4e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-overlay {
+    position: absolute
+}

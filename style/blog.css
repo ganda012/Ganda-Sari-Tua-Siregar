@@ -1,0 +1,138 @@
+/* Styles for blog.html */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1a2e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul .logo {
+    margin-right: auto;
+    padding-left: 100px;
+}
+
+.navbar ul .ganda {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff4b5c;
+}
+
+.nav-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #ff4b5c;
+}
+
+.blog {
+    margin-top: 80px;
+    padding: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.blog .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    color: #f1c40f;
+}
+
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-post {
+    position: relative;
+    width: calc(33.333% - 20px);
+    background: #2a2a4e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-content {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.blog-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.blog-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.blog-content a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.blog-content a:hover {
+    color: #f1c40f;
+}
+
+.blog-post:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
